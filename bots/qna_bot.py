@@ -34,4 +34,4 @@ class QnABot(ActivityHandler):
         if response and len(response) > 0:
             await turn_context.send_activity(MessageFactory.text(response[0].answer))
         else:
-            await turn_context.send_activity("No QnA Maker answers were found.")
+            await turn_context.send_activity("I cannot answer that sorry")
