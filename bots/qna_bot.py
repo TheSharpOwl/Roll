@@ -24,7 +24,7 @@ class QnABot(ActivityHandler):
         for member in members_added:
             if member.id != turn_context.activity.recipient.id:
                 await turn_context.send_activity(
-                    "Welcome to the QnA Maker sample! Ask me a question and I will try "
+                    "Hello I am Roll Ziad's AI Assistant you can ask me about his experience and I will try to"
                     "to answer it."
                 )
 
