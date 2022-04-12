@@ -9,11 +9,11 @@ import os
 
 class DefaultConfig:
     """ Bot Configuration """
-
-    PORT = 3978
-    APP_ID = os.environ.get("MicrosoftAppId", "")
-    APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
+    HOST = "0.0.0.0"
+    PORT = int(os.environ.get("PORT", 3978))
+    APP_ID = os.environ.get("MICROSOFT_APP_ID", "")
+    APP_PASSWORD = os.environ.get("MICROSOFT_APP_PASSWORD", "")
     # You can put the knowledge base qna service keys here (put them as environment variables in your os and they will be subsitituded here)
-    QNA_KNOWLEDGEBASE_ID = os.environ.get("QnAKnowledgebaseId", "")
-    QNA_ENDPOINT_KEY = os.environ.get("QnAEndpointKey", "")
-    QNA_ENDPOINT_HOST = os.environ.get("QnAEndpointHostName", "")
+    QNA_KNOWLEDGEBASE_ID = os.environ.get("QNA_KNOWLEDGEBASE_ID", "")
+    QNA_ENDPOINT_KEY = os.environ.get("QNA_ENDPOINT_KEY", "")
+    QNA_ENDPOINT_HOST = os.environ.get("QNA_ENDPOINT_HOST", "")
