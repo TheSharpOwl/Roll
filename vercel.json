@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/telegram.py": {
+      "includeFiles": "knowledge/**",
+      "maxDuration": 10
+    }
+  }
+}
